@@ -55,7 +55,7 @@ more separate. Each of these packages can be used independently outside of
 Rails. You can read more about Action Pack in
 link:files/vendor/rails/actionpack/README.html.</p>
 
-<p>== Getting Started</p>
+<h3>Getting Started</h3>
 
 <ol>
 <li><p>At the command prompt, create a new Rails application:
@@ -71,7 +71,7 @@ the following resources handy:</p></li>
 </li>
 <li>Ruby on Rails Tutorial Book: <a href="http://www.railstutorial.org/">http://www.railstutorial.org/</a>
 </li>
-</ul><p>== Debugging Rails</p>
+</ul><h3>Debugging Rails</h3>
 
 <p>Sometimes your application goes wrong. Fortunately there are a lot of tools that
 will help you debug it and get it back on the rails.</p>
@@ -107,7 +107,7 @@ several books available online as well:</p>
 </ul><p>These two books will bring you up to speed on the Ruby language and also on
 programming in general.</p>
 
-<p>== Debugger</p>
+<h3>Debugger</h3>
 
 <p>Debugger support is available through the debugger command when you start your
 Mongrel or WEBrick server with --debugger. This means that you can break out of
@@ -148,7 +148,7 @@ f.
 
 <p>Finally, when you're ready to resume execution, you can enter "cont".</p>
 
-<p>== Console</p>
+<h3>Console</h3>
 
 <p>The console is a Ruby shell, which allows you to interact with your
 application's domain model. Here you'll have all parts of the application
@@ -172,7 +172,7 @@ environment. Example: <tt>rails console production</tt>.</li>
 <p>More information about irb can be found at:
 link:<a href="http://www.rubycentral.org/pickaxe/irb.html">http://www.rubycentral.org/pickaxe/irb.html</a></p>
 
-<p>== dbconsole</p>
+<h3>dbconsole</h3>
 
 <p>You can go to the command line of your database directly through <tt>rails
 dbconsole</tt>. You would be connected to the database with the credentials
@@ -181,7 +181,7 @@ to the development database. Passing an argument will connect you to a different
 database, like <tt>rails dbconsole production</tt>. Currently works for MySQL,
 PostgreSQL and SQLite 3.</p>
 
-<p>== Description of Contents</p>
+<h3>Description of Contents</h3>
 
 <p>The default directory structure of a generated Ruby on Rails application:</p>
 
@@ -189,21 +189,21 @@ PostgreSQL and SQLite 3.</p>
   |   |-- assets
   |       |-- images
   |       |-- javascripts
-  |       <code>-- stylesheets
+  |       |-- stylesheets
   |   |-- controllers
   |   |-- helpers
   |   |-- mailers
   |   |-- models
-  |</code>-- views
-  |       <code>-- layouts
+  |-- views
+  |   |-- layouts
   |-- config
   |   |-- environments
   |   |-- initializers
-  |</code>-- locales
+  |-- locales
   |-- db
   |-- doc
   |-- lib
-  |   <code>-- tasks
+  |-- tasks
   |-- log
   |-- public
   |-- script
@@ -212,16 +212,17 @@ PostgreSQL and SQLite 3.</p>
   |   |-- functional
   |   |-- integration
   |   |-- performance
-  |</code>-- unit
+  |-- unit
   |-- tmp
   |   |-- cache
   |   |-- pids
   |   |-- sessions
-  |   <code>-- sockets
-</code>-- vendor
+  |   |-- sockets
+  |-- vendor
       |-- assets
-          <code>-- stylesheets
-</code>-- plugins</p>
+          |-- stylesheets
+          |-- plugins
+</p>
 
 <p>app
   Holds all the code that's specific to this particular application.</p>
